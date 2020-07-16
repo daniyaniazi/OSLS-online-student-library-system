@@ -3,12 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Upload</title>
 </head>
 <body>
     <main>
-        <form>
-            
+        <nav>
+            <div id="logo"><img src=images/logo.jpg alt="Logo-Image">
+                <img src="images/book.jpg " alt="book-Image"> </div>
+            <button>Log Out</button>
+        </nav>
+        <form action="" method="GET" enctype="multipart/form-data">
+          <div> <label for=""> Book Title</label>
+            <input  type="text" placeholder="Enter Book Title" name="title" value="">	</div>
+            <div> <label for=""> Tags</label>
+                <input  type="text" placeholder="Programming,Mathematics,English" name="title" value="">
+                </div>
+                <h3>Visibility</h3>
+                <button>Public</button>	
+                <button>Private</button>	
+                <h3>Price</h3>
+                <label for=""> Enter price in $ :</label>
+                <input  type="number" placeholder="Price" name="price" value="">	
+          <div>     <label for=""> Description</label>
+               <textarea    cols="30" rows="8" name="Description" id=""  placeholder="Type description here" ></textarea> </div>
+               <button>Upload</button>	
+              <button>Cancel</button>	
         </form>
     </main>
 </body>
