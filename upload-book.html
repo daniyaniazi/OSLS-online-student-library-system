@@ -6,7 +6,7 @@
     <title>Upload</title>
 </head>
 <body>
-     <!-- UPLOAD  BOOK  -->
+     <!--UPLOAD BOOK FORM -->
     <main>
         <nav>
             <div id="logo"><img src=images/logo.jpg alt="Logo-Image">
@@ -20,17 +20,21 @@
                 <input  type="text" placeholder="Programming,Mathematics,English" name="title" value="">
                 </div>
                 <h3>Visibility</h3>
-                <button>Public</button>	
-                <button>Private</button>	
+                Public<input type="radio" value="public" name="public document">
+                Private	<input type="radio" value="private" name="private document">
                 <h3>Price</h3>
                 <label for=""> Enter price in $ :</label>
                 <input  type="number" placeholder="Price" name="price" value="">	
           <div>     <label for=""> Description</label>
                <textarea    cols="30" rows="8" name="Description" id=""  placeholder="Type description here" ></textarea> </div>
-               <button>Upload</button>	
+               <div>	
+				<label for=""> Upload File </label>
+				<input type="file" name="file">		
+            </div>
+            <button>Submit</button>
               <button>Cancel</button>	
         </form>
     </main>
-      <!-- UPLOAD  BOOK  END  -->
+     <!--UPLOAD BOOK FORM  END-->
 </body>
 </html>
