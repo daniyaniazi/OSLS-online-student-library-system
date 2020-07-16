@@ -5,10 +5,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Page</title>
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+    <!-- NAV BAR -->
+    <header>
+        <div id="logo"><img src=images/logo.jpg alt="Logo-Image">
+            <img src="images/book.jpg " alt="book-Image"> </div>
+        <nav>
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
 
+                <li><a href="profile-page.html" title="My profile"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
+                <li><a href="change-profile-page.html" title="My profile"><i class="fa fa-cog" aria-hidden="true"></i>Update profile</a></li>
+                <li><button>Log Out</button></li>
+
+            </ul>
+        </nav>
+    </header>
+    <!-- NAV BAR END-->
+    <!-- SEARCH AND UPLOAD BUTTONS -->
+    <div>
+        <div>
+            <form>
+                <input type="search" placeholder="Search your books" aria-label="Search">
+                <button type="submit">Search</button>
+            </form>
+            <!-- UPLOAD NAV -->
+            <div>
+                <a href="upload-book.html"><button><i class="fa fa-upload" aria-hidden="true"></i>Upload</button></a>
+            </div>
+        </div>
+    </div>
+    <!-- SEARCH AND UPLOAD BUTTONS END -->
+
+    <!-- USER ITEMS -->
+    <div>
+        <div>
+            <h2>Your items</h2>
+            <div>
+                <DIV>
+                    <img src="images/Book1-img.jpg" alt="" width="100px">
+                </DIV>
+
+                <DIV>
+                    <a href="">
+                        <h3>Founder Of Ottamans</h3>
+                    </a>
+                    <div>
+                        <div> <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span></div>
+                        <div>
+                            <button><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Update Details</button>
+                        </div>
+                    </div>
+                </DIV>
+                <div>
+                    <button><i class="fa fa-eye" aria-hidden="true"></i> View more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- USER ITEMS END -->
+    <!-- USER SAVED ITEMS  -->
+    <div>
+        <div>
+            <h2>Saved Items</h2>
+            <div>
+                <DIV>
+                    <img src="images/Book2.jpg" alt="" width="100px">
+                </DIV>
+                <DIV>
+                    <a href="">
+                        <h3>The Rise Of Ottaman Empire</h3>
+                    </a>
+                    <div>
+                        <div> <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span></div>
+                        <div>
+                            <button><i class="fa fa-shopping-cart" aria-hidden="true"></i>Purchase</button>
+                        </div>
+                    </div>
+                </DIV>
+                <div>
+                    <button><i class="fa fa-eye" aria-hidden="true"></i> View more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- USER SAVED ITEMS END  -->
 </body>
+<footer>
+    <div>
+        <p>Copyright - OSLS 2020</p>
+    </div>
+</footer>
 
 </html>

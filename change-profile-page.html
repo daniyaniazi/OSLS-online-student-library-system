@@ -5,10 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Profile</title>
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+    <!-- NAV BAR -->
+    <header>
+        <div id="logo"><img src=images/logo.jpg alt="Logo-Image">
+            <img src="images/book.jpg " alt="book-Image"> </div>
+        <nav>
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
 
+                <li><a href="profile-page.html" title="My profile"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
+                <li><button>Log Out</button></li>
+
+            </ul>
+        </nav>
+    </header>
+    <!-- NAV BAR END-->
+    <!-- EDITING FORM -->
+    <div>
+        <div>
+
+
+            <form>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter name">
+                </div>
+                <div>
+                    <label for="Email">Email address</label>
+                    <input type="email" id="Email" placeholder="Enter email">
+                </div>
+                <div>
+                    <label for="Password">Password</label>
+                    <input type="password" id="tPassword1" placeholder="Password">
+                </div>
+                <div>
+                    <label for="number">Contact no</label>
+                    <input type="number" id="name">
+
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Cancel</button>
+            </form>
+        </div>
+    </div>
+    <!-- EDITING FORM END-->
 </body>
 
 </html>
