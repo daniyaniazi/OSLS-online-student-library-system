@@ -1,55 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upload</title>
-    <link rel="stylesheet" href="styles/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
-    <!--UPLOAD BOOK FORM -->
+     <!--UPLOAD BOOK FORM -->
     <main>
         <nav>
             <div id="logo"><img src=images/logo.jpg alt="Logo-Image">
                 <img src="images/book.jpg " alt="book-Image"> </div>
-            <ul>
-                <li><a href="Homepage.html">Home</a></li>
-
-                <li><a href="profile-page.html" title="My profile"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
-                <li><button>Log Out</button></li>
-            </ul>
-
+            <button>Log Out</button>
         </nav>
         <form action="" method="GET" enctype="multipart/form-data">
-            <div> <label for=""> Book Title</label>
-                <input type="text" placeholder="Enter Book Title" name="title" value=""> </div>
+          <div> <label for=""> Book Title</label>
+            <input  type="text" placeholder="Enter Book Title" name="title" value="">	</div>
             <div> <label for=""> Tags</label>
-                <input type="text" placeholder="Programming,Mathematics,English" name="title" value="">
-            </div>
-            <h3>Visibility</h3>
-            Public<input type="radio" value="public" name="document"> Private <input type="radio" value="private" name="document">
-            <h3>Price</h3>
-            <label for=""> Enter price in $ :</label>
-            <input type="number" placeholder="Price" name="price" value="">
-            <div> <label for=""> Description</label>
-                <textarea cols="30" rows="8" name="Description" id="" placeholder="Type description here"></textarea> </div>
-            <div>
-                <label for=""> Upload File </label>
-                <input type="file" name="file">
+                <input  type="text" placeholder="Programming,Mathematics,English" name="title" value="">
+                </div>
+                <h3>Visibility</h3>
+                Public<input type="radio" value="public" name="document">
+                Private	<input type="radio" value="private" name="document">
+                <h3>Price</h3>
+                <label for=""> Enter price in $ :</label>
+                <input  type="number" placeholder="Price" name="price" value="">
+          <div>     <label for=""> Description</label>
+               <textarea    cols="30" rows="8" name="Description" id=""  placeholder="Type description here" ></textarea> </div>
+               <div>
+				<label for=""> Upload File </label>
+				<input type="file" name="file">
             </div>
             <button>Submit</button>
-            <button>Cancel</button>
+              <button>Cancel</button>
         </form>
     </main>
-    <!--UPLOAD BOOK FORM  END-->
+    <footer>Copyright - OSLS 2020</footer>
+     <!--UPLOAD BOOK FORM  END-->
 </body>
-<footer>
-    <div>
-        <p>Copyright - OSLS 2020</p>
-    </div>
-</footer>
-
 </html>
