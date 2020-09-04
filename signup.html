@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,64 +11,205 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
+<style>
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    a:hover {
+        color: #E6EBF6;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    body {
+        background-color: #261249;
+    }
+    
+    html {
+        box-sizing: border-box;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    footer {
+        background-color: #000000ab;
+        /* position: fixed;*/
+        bottom: 0%;
+    }
+    
+    i {
+        padding: 5px;
+        margin: 0 5px;
+        color: #E6EBF6;
+    }
+    
+    .btn-submit {
+        background-color: #F15B40;
+    }
+    
+    .btn-submit:hover {
+        background-color: transparent;
+        border: 1px solid #E6EBF6;
+        color: #E6EBF6;
+    }
+    
+    textarea {
+        width: 100%;
+    }
+    
+    .login-img {
+        background: linear-gradient(rgb(0 2 16 / 56%), rgb(79 79 79 / 0%)), url("images/LOGIN-SIDE-IMG.jpg");
+        height: 100vh;
+        box-sizing: border-box;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    img {
+        object-fit: cover;
+    }
+    
+    .Login-btns {
+        width: 75%;
+        display: block;
+    }
+    
+    .login-btn {
+        background-color: #F15B40;
+        color: black;
+        border-radius: 5px;
+        height: min-content;
+    }
+    
+    .login-fb-btn {
+        background-color: #4C5BA8;
+        color: black;
+        border-radius: 5px;
+    }
+    
+    .login-fb-btn:hover,
+    .login-btn:hover {
+        background-color: transparent;
+        border: 1px solid #E6EBF6;
+        color: #E6EBF6;
+    }
+    
+    .link-color {
+        color: #F15B40;
+    }
+    
+    @media screen and (min-width:600px) {
+        .login-fb-btn {
+            width: 75%;
+            margin: auto;
+        }
+        .login-btn {
+            width: 75%;
+            margin: auto;
+        }
+    }
+    
+    @media screen and (max-width:400px) {
+        .login-img {
+            order: 2;
+            display: none;
+        }
+    }
+</style>
 
 <body>
-    <!-- NAV BAR -->
     <header>
-        <div id="logo"><img src=images/logo-white.png alt="Logo-Image" width="200px">
-        </div>
-        <nav>
-            <ul>
 
-                <li><a href="login.html" title="Login"> Login</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light  ">
+            <a class="navbar-brand" href="index.html"> <img src=images/logo-white.png alt="Logo-Image" width="180px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-                <li><a href="index.html" title="Visitor"> Continue as Visitor</a></li>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto ">
 
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Continue as Visitor</a>
+                    </li>
+                    
+                    <!-- <li class="nav-item">
+                        <a href="profile-page.html" title="My profile"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                    </li> -->
+                </ul>
 
-            </ul>
+            </div>
         </nav>
     </header>
-    <!-- NAV BAR END-->
-    <!-- SIGNUP FORM -->
-    <div>
-        <div>
-            <h2>Sign Up</h2>
+    <section class="container-fluid main text-light p-0">
+        <div class=" container-fluid p-0">
+            <div class="row d-flex justify-content-center p-0 w-100 m-0">
+                <div class="login-img col-md-6 p-0">
+                    <!-- <img src="images/LOGIN-SIDE-IMG.jpg" alt="" class="img-fluid"> -->
+                </div>
+                <!-- //////////////////////////// -->
+                <div class="login-form col-md-6 p-0  ">
+                    <div class="form p-4 w-75 mx-auto">
+                        <h1 class="text-center mb-5">SIGN UP</h1>
+                        <form>
+                         <div class="form-group">
+                                <label for="exampleInputEmail1">User Name</label>
+                                <input type="text" class="form-control" id="exampleInputusername" aria-describedby="username" placeholder="Enter Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                             <div class="form-group">
+                                <label for="exampleInputPassword1">Contact No</label>
+                                <input type="number" class="form-control" id="exampleInputcontactno1" placeholder="Enter Contact no.">
+                            </div>
+                           <div class="form-group">
+                                <label for="exampleInputInstitute1">Institute</label>
+                                <input type="text" class="form-control" id="exampleInputInstitute1" placeholder="Enter Institute">
+                            </div>
+                            <div class="Login-btns w-100  my-3 ">
 
-            <form>
-                <div>
-                    <label for="username">Username</label>
-                    <input type="text" id="username" placeholder="Enter Name" value="">
+                                <div class="d-block  mx-auto  "><a href="index.html" class="login-fb-btn btn btn-block">Sign Up</a>
+                                </div>
+                                <div class="d-block  mx-auto  my-2"><a href="home.html" class="login-fb-btn btn btn-block">Cancel </a>
+                                </div>
+                                <div class="my-2 text-center"></div>
+                                
+                            </div>
+                    </div>
+
+                    </form>
                 </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" placeholder="Enter Email" value="">
-                </div>
-                <div>
-                    <label for="password">Password</label>
-                    <input type="text" placeholder="Enter Password" value="">
-                </div>
-                <div>
-                    <label for="contactno">Contact No.</label>
-                    <input type="number" placeholder="Enter Contact no." value="">
-                </div>
-                <div>
-                    <label for="institute">Institute</label>
-                    <input type="text" placeholder="Enter Institute" value="">
-                </div>
-                <button>Sign Up</button>
-                <button>Cancel</button>
-                <br>
-            </form>
+            </div>
         </div>
-    </div>
-    <!-- SIGNUP FORM END-->
-
+        </div>
+    </section>
 </body>
-<footer>
-    <div>
-        <img src="images/book.png" alt="" width="60px">
-        <p>Copyright - OSLS 2020</p>
+
+<footer class="container-fluid  text-center">
+    <div class="justify-content-center">
+        <img src="TRANSPARENT/logo.png" alt="" width="60px ">
+        <span class="col-sm-10 text-light"> Copyright - OSLS 2020</span>
     </div>
+    </main>
+
+
 </footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </html>
