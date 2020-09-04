@@ -78,21 +78,15 @@
         display: block;
     }
     
-    .login-btn {
+    .signup-btn {
         background-color: #F15B40;
         color: black;
         border-radius: 5px;
         height: min-content;
     }
     
-    .login-fb-btn {
-        background-color: #4C5BA8;
-        color: black;
-        border-radius: 5px;
-    }
-    
-    .login-fb-btn:hover,
-    .login-btn:hover {
+    .cancel-btn:hover,
+    .signup-btn:hover {
         background-color: transparent;
         border: 1px solid #E6EBF6;
         color: #E6EBF6;
@@ -103,11 +97,11 @@
     }
     
     @media screen and (min-width:600px) {
-        .login-fb-btn {
+        .cancel-btn {
             width: 75%;
             margin: auto;
         }
-        .login-btn {
+        .signup-btn {
             width: 75%;
             margin: auto;
         }
@@ -139,7 +133,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Continue as Visitor</a>
                     </li>
-                    
+
                     <!-- <li class="nav-item">
                         <a href="profile-page.html" title="My profile"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
                     </li> -->
@@ -159,7 +153,7 @@
                     <div class="form p-4 w-75 mx-auto">
                         <h1 class="text-center mb-5">SIGN UP</h1>
                         <form>
-                         <div class="form-group">
+                            <div class="form-group">
                                 <label for="exampleInputEmail1">User Name</label>
                                 <input type="text" class="form-control" id="exampleInputusername" aria-describedby="username" placeholder="Enter Name">
                             </div>
@@ -172,22 +166,22 @@
                                 <label for="exampleInputPassword1">Password</label>
                                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                             </div>
-                             <div class="form-group">
+                            <div class="form-group">
                                 <label for="exampleInputPassword1">Contact No</label>
                                 <input type="number" class="form-control" id="exampleInputcontactno1" placeholder="Enter Contact no.">
                             </div>
-                           <div class="form-group">
+                            <div class="form-group">
                                 <label for="exampleInputInstitute1">Institute</label>
                                 <input type="text" class="form-control" id="exampleInputInstitute1" placeholder="Enter Institute">
                             </div>
                             <div class="Login-btns w-100  my-3 ">
 
-                                <div class="d-block  mx-auto  "><a href="index.html" class="login-fb-btn btn btn-block">Sign Up</a>
+                                <div class="d-block  mx-auto  "><a href="index.html" class="signup-btn btn btn-block">Sign Up</a>
                                 </div>
-                                <div class="d-block  mx-auto  my-2"><a href="home.html" class="login-fb-btn btn btn-block">Cancel </a>
+                                <div class="d-block  mx-auto  my-2"><a href="home.html" class="cancel-btn btn-danger btn btn-block">Cancel </a>
                                 </div>
                                 <div class="my-2 text-center"></div>
-                                
+
                             </div>
                     </div>
 

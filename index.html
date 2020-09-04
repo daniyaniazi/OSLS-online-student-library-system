@@ -11,6 +11,19 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        a:hover {
+            color: #E6EBF6;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
         body {
             background-color: #261249;
         }
@@ -93,83 +106,86 @@
         </nav>
     </header>
     <main class="container-fluid main text-light">
-        <section class="container my-4  w-100 search-section text-center">
+        <section class="container  my-4  w-100 search-section text-center">
             <label for="search"><h3>Search Your Favourite Item</h3></label>
-            <form class="form-inline my-2 my-lg-0 mx-auto w-75 ">
-                <input class="form-control mr-sm-2 w-75" type="search" placeholder="Search" aria-label="Search" id="search">
-                <button class="btn  btn-search my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            <div class="row align-items-center w-100 mx-auto">
+                <form class="form-inline my-2 col-md-9  d-flex align-items-center justify-content-center w-100 ">
+                    <input class="form-control mr-sm-2 w-75 " type=" search " placeholder="Search " aria-label="Search " id="search ">
+                    <button class="btn  btn-search my-2 my-sm-0 " type="submit ">Search</button>
+                </form>
+                <a href="upload-book.html " class="col-md-3  mx-auto "> <button class="btn btn-block btn-success my-2 w-100">Upload Book</button></a>
+            </div>
         </section>
-        <section class="container my-5 text-center pop-item-section">
-            <h1 class="text-center"> POPULAR ITEMS </h1>
-            <div class="row justify-content-center align-items-center">
-                <div id="Book1" class="col-sm-6 col-md-4  col-lg-3 text-center">
-                    <div class="img-div mx-auto">
-                        <img src="images/book1.jpg" alt="bookTitle" class="img-fluid m-2  "></div>
-                    <button class="btn-block  btn book-btn">Differential and Integral Calculus</button>
-                    <p class="p-1">By Clyde E.love,Earl D.Rainville</p>
-                    <div class="text-center">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
+        <section class="container my-5 text-center pop-item-section ">
+            <h1 class="text-center "> POPULAR ITEMS </h1>
+            <div class="row justify-content-center align-items-center ">
+                <div id="Book1 " class="col-sm-6 col-md-4 col-lg-3 text-center ">
+                    <div class="img-div mx-auto ">
+                        <img src="images/book1.jpg " alt="bookTitle " class="img-fluid m-2 "></div>
+                    <button class="btn-block btn book-btn ">Differential and Integral Calculus</button>
+                    <p class="p-1 ">By Clyde E.love,Earl D.Rainville</p>
+                    <div class="text-center ">
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star "></span>
                     </div>
                 </div>
-                <div id="Book1" class=" col-sm-6 col-md-4 col-lg-3 text-center">
-                    <div class="img-div mx-auto">
-                        <img src="images/Book2.jpg" alt="bookTitle" class="img-fluid m-2"></div>
-                    <button class="btn-block  btn book-btn">Python Programming For Beginners</button>
-                    <p class="p-1">By Joseph Joyner</p>
-                    <div class="text-center">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
+                <div id="Book1 " class=" col-sm-6 col-md-4 col-lg-3 text-center ">
+                    <div class="img-div mx-auto ">
+                        <img src="images/Book2.jpg " alt="bookTitle " class="img-fluid m-2 "></div>
+                    <button class="btn-block btn book-btn ">Python Programming For Beginners</button>
+                    <p class="p-1 ">By Joseph Joyner</p>
+                    <div class="text-center ">
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star "></span>
                     </div>
                 </div>
-                <div id="Book1" class=" col-sm-6 col-md-4 col-lg-3 text-center">
-                    <div class="img-div mx-auto">
-                        <img src="images/book3.jpg" alt="bookTitle" class="img-fluid m-2"></div>
-                    <button class="btn-block  btn book-btn">Differential and Integral Calculus</button>
-                    <p class="p-1">By Clyde E.love,Earl D.Rainville</p>
-                    <div class="text-center">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
+                <div id="Book1 " class=" col-sm-6 col-md-4 col-lg-3 text-center ">
+                    <div class="img-div mx-auto ">
+                        <img src="images/book3.jpg " alt="bookTitle " class="img-fluid m-2 "></div>
+                    <button class="btn-block btn book-btn ">Differential and Integral Calculus</button>
+                    <p class="p-1 ">By Clyde E.love,Earl D.Rainville</p>
+                    <div class="text-center ">
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star "></span>
                     </div>
                 </div>
-                <div id="Book1" class="col-sm-6 col-md-4 col-lg-3 text-center">
-                    <div class="img-div mx-auto">
-                        <img src="images/book1.jpg" alt="bookTitle" class="img-fluid m-2  "></div>
-                    <button class="btn-block  btn book-btn">Differential and Integral Calculus</button>
-                    <p class="p-1">By Clyde E.love,Earl D.Rainville</p>
-                    <div class="text-center">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
+                <div id="Book1 " class="col-sm-6 col-md-4 col-lg-3 text-center ">
+                    <div class="img-div mx-auto ">
+                        <img src="images/book1.jpg " alt="bookTitle " class="img-fluid m-2 "></div>
+                    <button class="btn-block btn book-btn ">Differential and Integral Calculus</button>
+                    <p class="p-1 ">By Clyde E.love,Earl D.Rainville</p>
+                    <div class="text-center ">
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star checked "></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star "></span>
                     </div>
                 </div>
             </div>
-            <button class="btn  text-center my-4 seemore-btn">See More</button>
+            <button class="btn text-center my-4 seemore-btn ">See More</button>
         </section>
 
     </main>
-    <footer class="container-fluid  text-center">
-        <div class="justify-content-center">
-            <img src="TRANSPARENT/logo.png" alt="" width="60px ">
-            <span class="col-sm-10 text-light"> Copyright - OSLS 2020</span>
+    <footer class="container-fluid text-center ">
+        <div class="justify-content-center ">
+            <img src="TRANSPARENT/logo.png " alt=" " width="60px ">
+            <span class="col-sm-10 text-light "> Copyright - OSLS 2020</span>
         </div>
     </footer>
     <!--HOME PAGE END -->
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
 
 </html>
