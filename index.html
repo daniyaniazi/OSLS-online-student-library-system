@@ -6,69 +6,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="styles/font-awesome.min.css">
+    <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #261249;
+        }
+        
+        .img-div {
+            width: 100%;
+            height: 280px;
+            /* background-color: aqua; */
+        }
+        
+        .img-div img {
+            width: 95%;
+            height: 90%;
+        }
+        
+        html {
+            box-sizing: border-box;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        
+        section {
+            padding: 0%;
+        }
+        
+        .btn-search,
+        .seemore-btn {
+            background-color: #F15B40;
+        }
+        
+        .book-btn {
+            background-color: #E6EBF6;
+            height: max-content;
+            overflow: hidden;
+        }
+        
+        .btn-search:hover,
+        .seemore-btn:hover,
+        .book-btn:hover {
+            background-color: transparent;
+            border: 1px solid #E6EBF6;
+            color: #E6EBF6;
+        }
+        
+        footer {
+            background-color: #000000ab;
+            position: fixed;
+            bottom: 0%;
+        }
+    </style>
 </head>
 
 <body>
     <!--HOME PAGE -->
     <header>
-        <div id="logo">
-            <img src=images/logo-white.png alt="Logo-Image" width="200px">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><button><a href="signup.html" target="_blank">Sign Up</a></button></li>
-                    <li><button><a href="login.html" target="_blank">Login</a></button></li>
-                    <li><a href="profile-page.html" title="My profile"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light  ">
+            <a class="navbar-brand" href="index.html"> <img src=images/logo-white.png alt="Logo-Image" width="180px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto ">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">signup</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="profile-page.html" title="My profile"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                    </li> -->
                 </ul>
-            </nav>
+
+            </div>
+        </nav>
     </header>
-    <main>
-        <section>
-            <p>Search and Browse Books</p>
-            <input placeholder="Title">
-            <button>Search</button>
+    <main class="container-fluid main text-light">
+        <section class="container my-4  w-100 search-section text-center">
+            <label for="search"><h3>Search Your Favourite Item</h3></label>
+            <form class="form-inline my-2 my-lg-0 mx-auto w-75 ">
+                <input class="form-control mr-sm-2 w-75" type="search" placeholder="Search" aria-label="Search" id="search">
+                <button class="btn  btn-search my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </section>
-        <section>
-            <h2>
-                Popular Items </h2>
-            <div id="Book1">
-                <img src="images/calculus-book.jpg" alt="bookTitle">
-                <button>Differential and Integral Calculus</button>
-                <p>By Clyde E.love,Earl D.Rainville</p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-
+        <section class="container my-5 text-center pop-item-section">
+            <h1 class="text-center"> POPULAR ITEMS </h1>
+            <div class="row justify-content-center align-items-center">
+                <div id="Book1" class="col-sm-6 col-md-4  col-lg-3 text-center">
+                    <div class="img-div mx-auto">
+                        <img src="images/book1.jpg" alt="bookTitle" class="img-fluid m-2  "></div>
+                    <button class="btn-block  btn book-btn">Differential and Integral Calculus</button>
+                    <p class="p-1">By Clyde E.love,Earl D.Rainville</p>
+                    <div class="text-center">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div id="Book1" class=" col-sm-6 col-md-4 col-lg-3 text-center">
+                    <div class="img-div mx-auto">
+                        <img src="images/Book2.jpg" alt="bookTitle" class="img-fluid m-2"></div>
+                    <button class="btn-block  btn book-btn">Python Programming For Beginners</button>
+                    <p class="p-1">By Joseph Joyner</p>
+                    <div class="text-center">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div id="Book1" class=" col-sm-6 col-md-4 col-lg-3 text-center">
+                    <div class="img-div mx-auto">
+                        <img src="images/book3.jpg" alt="bookTitle" class="img-fluid m-2"></div>
+                    <button class="btn-block  btn book-btn">Differential and Integral Calculus</button>
+                    <p class="p-1">By Clyde E.love,Earl D.Rainville</p>
+                    <div class="text-center">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div id="Book1" class="col-sm-6 col-md-4 col-lg-3 text-center">
+                    <div class="img-div mx-auto">
+                        <img src="images/book1.jpg" alt="bookTitle" class="img-fluid m-2  "></div>
+                    <button class="btn-block  btn book-btn">Differential and Integral Calculus</button>
+                    <p class="p-1">By Clyde E.love,Earl D.Rainville</p>
+                    <div class="text-center">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
             </div>
-            <div id="Book2">
-                <img src="images/python-programming-for-beginners.jpg" style="width: 11%;" alt="bookTitle">
-                <button>Python Programming For Beginners</button>
-                <p>By Joseph Joyner</p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-
-            </div>
+            <button class="btn  text-center my-4 seemore-btn">See More</button>
         </section>
-        <aside>
-            <img>
-        </aside>
 
-        <button>See More</button>
     </main>
-    <footer>
-        <div>
-            <img src="images/book.png" alt="" width="60px">
-            <p> Copyright - OSLS 2020</p>
+    <footer class="container-fluid  text-center">
+        <div class="justify-content-center">
+            <img src="TRANSPARENT/logo.png" alt="" width="60px ">
+            <span class="col-sm-10 text-light"> Copyright - OSLS 2020</span>
         </div>
     </footer>
     <!--HOME PAGE END -->
 </body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </html>
