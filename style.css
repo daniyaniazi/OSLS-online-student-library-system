@@ -10,3 +10,5 @@ body {
     background-color: #222323;
     background-color: #161616;
 }
+
+<div><div><img src="https://img.icons8.com/nolan/64/login-rounded-right.png" /></div><div><h2>Login </h2></div><!-- LOGIN FORM --><div class="form_container px-5"><form action="/action_page.php"><div class="form-group "><label for="email">Email address:</label><input type="email" placeholder="Enter email" id="email"></div><div class="form-group"><label for="pwd">Password:</label><input type="password" placeholder="Enter password" id="pwd"></div><div class="form-group form-check"><label><input type="checkbox">Remember me </label></div><button type="submit">Submit</button></form><div></div><div><div><button type="submit"><a href="#"></i>Connect with facebook </a></button></div></div><div><div><button type="submit"><a href="#" class="text-white"><i class="fa fa-google p-2"></i>Connect with facebook </a></button></div></div><div class="my-2"></div><div class="register"><p>Not yet a Member ? <span><a href="signup.html">Register here</a></span></p></div></div><!-- LOGIN FORM END --></div></div>
