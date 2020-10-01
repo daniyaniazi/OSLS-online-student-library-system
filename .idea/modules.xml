@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/OSLS-online-student-library-system.iml" filepath="$PROJECT_DIR$/.idea/OSLS-online-student-library-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/osl.iml" filepath="$PROJECT_DIR$/.idea/osl.iml" />
     </modules>
   </component>
 </project>
