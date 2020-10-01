@@ -1,0 +1,305 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #E6EBF6;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #261249;
+}
+
+.img-div {
+    width: 100%;
+    height: 280px;
+    /* background-color: aqua; */
+}
+
+.img-div img {
+    width: 95%;
+    height: 90%;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+section {
+    padding: 0%;
+}
+
+.btn-search,
+.seemore-btn {
+    background-color: #F15B40;
+}
+
+.book-btn {
+    background-color: #E6EBF6;
+    height: max-content;
+
+}
+
+.btn {
+
+    white-space: normal;
+}
+
+.btn-search:hover,
+.seemore-btn:hover,
+.book-btn:hover {
+    background-color: transparent;
+    border: 1px solid #E6EBF6;
+    color: #E6EBF6;
+}
+
+footer {
+    background-color: #000000ab;
+    position: fixed;
+    bottom: 0%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #E6EBF6;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #261249;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+footer {
+    background-color: #000000ab;
+    /* position: fixed;*/
+    bottom: 0%;
+}
+
+i {
+    padding: 5px;
+    margin: 0 5px;
+    color: #E6EBF6;
+}
+
+.btn-submit {
+    background-color: #F15B40;
+}
+
+.btn-submit:hover {
+    background-color: transparent;
+    border: 1px solid #E6EBF6;
+    color: #E6EBF6;
+}
+
+textarea {
+    width: 100%;
+}
+
+.login-img {
+    background: linear-gradient(rgb(0 2 16 / 56%), rgb(79 79 79 / 0%)), url("../images/LOGIN-SIDE-IMG.jpg");
+    height: 100vh;
+    box-sizing: border-box;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+img {
+    object-fit: cover;
+}
+
+.Login-btns {
+    width: 100%;
+    display: block;
+}
+
+.login-btn {
+    background-color: #F15B40;
+    color: white;
+    border-radius: 5px;
+    height: min-content;
+}
+
+.login-fb-btn {
+    background-color: #4C5BA8;
+    color: black;
+    border-radius: 5px;
+}
+
+.login-fb-btn:hover,
+.login-btn:hover {
+    background-color: transparent;
+    border: 1px solid #E6EBF6;
+    color: #E6EBF6;
+}
+
+.link-color {
+    color: #F15B40;
+}
+
+@media screen and (min-width:600px) {
+    .login-fb-btn {
+        width: 100%;
+        margin: auto;
+    }
+    .login-btn {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .login-img {
+        order: 2;
+        display: none;
+    }
+}
+
+/*** *** CSS Hover Effects ***/
+.nav-item:not(.active):not(.profile-item) {
+    position: relative;
+}
+.nav-item:not(.active):not(.profile-item) a{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    height: 100%;
+}
+.nav-item:not(.active):not(.profile-item) a::after{
+    content: '';
+    position: absolute;
+    width: 75%;
+    height: 3px;
+    bottom: -3px;
+    left: 15%;
+    background-color: #6d45b1cc;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s;
+}
+.nav-item:not(.active):not(.profile-item):hover a:after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+.nav-item:not(.active):not(.profile-item):hover a{
+    color: #6d45b1cc !important;
+    font-weight: 500;
+}
+.nav-item{
+    min-width: 75px;
+    text-align: center;
+}
+
+.profile-item .dropdown-menu{
+    right: 0px !important;
+    left: auto;
+    font-size: 13.5px;
+}
+.username-item{
+    cursor: default;
+}
+.username-item:hover{
+    background-color: transparent;
+}
+.dropdown-divider{
+    margin: .3rem 0;
+}
+.profile-avatar{
+    border: 1px solid #a8a8a8;
+}
+.logout-btn:hover{
+    background: #e7e7e7;
+    color: black;
+    font-weight: 500;
+}
+/*** *** CSS Hover Effects ***/
+
+
+.nav-item.active{
+    border-bottom: 3px solid #663ab2;
+}
+.nav-item.active a{
+    color: #663ab2  !important;
+    font-weight: 800;
+}
+
+.signup-btn {
+    background-color: #F15B40;
+    color: black;
+    border-radius: 5px;
+    height: min-content;
+    color: white;
+}
+
+.alert{
+    padding: 0.65rem 1rem !important;
+}
+
+.alert-danger{
+    background-color: #ae1e2b;
+    border-color: #ffffff4a;
+    color: #ebe9e9;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.alert-success{
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0aa62f;
+    border-color: #b3b3b3;
+    color: #fff7f7;
+}
+.alert-success i{
+    color: white;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 992px) {
+    .alert-wrapper {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+.heading-seprator{
+    border-top: 1px solid #e6dfdf;
+}
+
+
+.upload-btn{
+    background-color: #4fa8f4;
+    border-color: #48c9e8;
+    color: white;
+}
+
+.upload-btn:hover{
+    border: 1px solid #9c8f8f;
+    background: #1b8287;
+    color: white;
+}
+
+.border-red-input{
+    border: 2px solid #f23232;
+    border-style: inset;
+}
